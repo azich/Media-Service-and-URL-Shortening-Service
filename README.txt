@@ -7,6 +7,10 @@
     -VERIFY_OAUTH: Require valid Twitter OAuth Echo credentials for media uploads
     -CAPTCHA_PUB: CAPTCHA public key
     -CAPTCHA_PRIV: CAPTCHA private key
+    -MYSQL_HOST: The MySQL host
+    -MYSQL_USER: The MySQL username
+    -MYSQL_PASS: The MySQL password
+    -MYSQL_DB: The MySQL database
     -ROOT: The path the short URLs begin at including trailing slash
     -PINS: An array that maps pins to API keys
     -API_KEYS: An array that maps API keys to an array of services
