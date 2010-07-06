@@ -136,7 +136,7 @@ function make_conn() {
 }
 
 function next_key($conn) {
-  $rs = mysql_query("select id,code from mapping where iid=0 order by rand() limit 1",$conn);
+  $rs = mysql_query("select id,code from mapping where iid=0 order by ".($GLOBALS['SMALL_FIRST']?"length(code)":"").($GLOBALS['IN_ORDER']?"code":"rand()")." limit 1",$conn);
   return mysql_fetch_array($rs);  
 }
 

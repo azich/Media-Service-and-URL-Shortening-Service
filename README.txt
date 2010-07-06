@@ -7,6 +7,8 @@
     -VERIFY_OAUTH: Require valid Twitter OAuth Echo credentials for media uploads
     -CAPTCHA_PUB: CAPTCHA public key
     -CAPTCHA_PRIV: CAPTCHA private key
+    -SMALL_FIRST: Use shorter URLs before longer ones
+    -IN_ORDER: Issue codes in ascending order
     -MYSQL_HOST: The MySQL host
     -MYSQL_USER: The MySQL username
     -MYSQL_PASS: The MySQL password
@@ -21,3 +23,6 @@
   -Load the following URLs into the Twitter for iPhone Services Settings
     -Image Service: $ROOT/tiny.php?api_key=<API key>
     -URL Shortening: $ROOT/tiny.php?api_key=<API key>&url=%@
+
+*LIMITATIONS*
+  -When all the available mappings in the database are filled, the script ceases to function.
